@@ -15,8 +15,8 @@ If I have not had the pleasure to introduce myself to you, then this is the perf
 - 👯 looking to collaborate on a couple of VR and Web3 project ideas that I had
 - ⚡ Unrelated fact: Greek pilosopher Chrysippus died from laughing at his own joke, RIP  legend
 
-# This Project: My Personal Website
-* This is my personal website, and I had to carefully choose the style and the feel that I would like to go for. After hours of research and planning, I am ready to begin
+# Check Out My Personal Website
+* Carefully chose the style and the feel that I would like to go for. After hours of research and planning, I am ready to begin
 * Used Figma for planning and ideation stage
 * In addition to HTML/CSS and JavaScript, I am planning to use Bootstrap, JQuery, and Three.js
 * Will contain a big portion of my portfolio
