@@ -21,6 +21,6 @@ If I have not had the pleasure to introduce myself to you, then this is the perf
 * In addition to HTML/CSS and JavaScript, I am planning to use Bootstrap, JQuery, and Three.js
 * Will contain a big portion of my portfolio
 * Will contain a information about my experience
-* Will have a very unique style: incorporating Agile concepts, animation, parallax effect, and music 🎵
+* Will have a very unique style and strucutre, incorporating animation, parallax effect, and music 🎵
 
 
