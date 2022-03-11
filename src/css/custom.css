@@ -84,15 +84,15 @@
 /* Content elements */
 
 .demo-1 .deco {
-	width: 260px;
-	height: 260px;
+	width: 310px;
+	height: 310px;
 	border: 2px dashed #ddd;
 	border: 2px dashed rgba(150,150,150,0.4);
 	border-radius: 50%;
 	position: absolute;
 	bottom: 50%;
 	left: 50%;
-	margin: 0 0 0 -130px;
+	margin: 0 0 0 -155px;
 }
 
 .demo-1 [data-icon]:after {
@@ -101,16 +101,36 @@
 	color: #999;
 	text-shadow: 0 0 1px #999;
 	position: absolute;
-	width: 220px;
-	height: 220px;
+	width: 260px;
+	height: 260px;
 	line-height: 220px;
 	text-align: center;
 	font-size: 100px;
 	top: 50%;
 	left: 50%;
-	margin: -110px 0 0 -110px;
+	margin: -130px 0 0 -130px;
 	box-shadow: inset 0 0 0 10px #f7f7f7;
 	border-radius: 50%;
+}
+
+#slideshowMyself{
+	color: #999;
+	text-shadow: 0 0 1px #999;
+	position: absolute;
+	width: 260px;
+	height: 260px;
+	line-height: 220px;
+	text-align: center;
+	font-size: 100px;
+	top: 50%;
+	left: 50%;
+	margin: -130px 0 0 -130px;
+	box-shadow: inset 0 0 0 10px #f7f7f7;
+	border-radius: 50%;
+  background-image: url("../images/Me/outdoors1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .demo-1 .sl-slide h2 {
@@ -137,9 +157,9 @@
 	width: 100%;
 	text-align: center;
 	left: 0;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
+	font-weight: 450;
+	font-size: clamp(14px, 1.3vw, 18px);
+	line-height: 30px;
 	height: 70px;
 	color: #8b8b8b;
 	z-index: 2;
@@ -457,12 +477,13 @@
 		margin-bottom: 50px;
 	}
 
-	.demo-1 [data-icon]:after {
-		width: 110px;
-		height: 110px;
-		line-height: 110px;
+	.demo-1 [data-icon]:after,
+  #slideshowMyself{
+		width: 140px;
+		height: 140px;
+		line-height: 140px;
 		font-size: 40px;
-		margin: -55px 0 0 -55px;
+		margin: -70px 0 0 -70px;
 	}
 
 	.demo-1 .sl-slide blockquote,

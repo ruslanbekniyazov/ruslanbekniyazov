@@ -46,12 +46,13 @@
 
           <div class="sl-slider">
 
-            <div class="sl-slide bg-2" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <div class="sl-slide bg-2" data-orientation="horizontal" data-slice1-rotation="-25"
+              data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
               <div class="sl-slide-inner">
-                <div class="deco" data-icon="📖"></div>
+                <div class="deco" data-icon=""><div id="slideshowMyself"></div></div>
                 <h2>Introduction</h2>
                 <div class="slideContainer">
-                  <p>You have just dined, and however scrupulously the slaughterhouse is
+                  <p>Welcome, my name is Ruslan Bekniyazov, and
                     concealed in the graceful distance of miles, there is complicity.</p>
                   </div>
               </div>
@@ -111,6 +112,23 @@
       setTimeout(function() {
 
         var Page = (function() {
+
+          var images = ["pv.jpg", "Microsoft.jpg", "outdoors1.jpg", "startupathon1.jpg", "startupathon2.jpg",
+          "mom.jpg", "horse.jpg", "awardceremony.jpg"];
+          $(function () {
+              var i = 0;
+              $("#slideshowMyself").css("background-image", "url(src/images/Me/" + images[i] + ")");
+              setInterval(function () {
+                  i++;
+                  if (i == images.length) {
+                      i = 0;
+                  }
+                  $("#slideshowMyself").fadeOut(3000, function () {
+                      $(this).css("background-image", "url(src/images/Me/" + images[i] + ")");
+                      $(this).fadeIn(3000);
+                  });
+              }, 8000);
+          });
 
           var $navArrows = $( '#nav-arrows' ),
             $nav = $( '#nav-dots > span' ),
