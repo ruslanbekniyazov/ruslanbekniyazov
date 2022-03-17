@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+    font-family: 'AnimalsNormal';
+    src: url('fonts/animals-webfont.eot');
+    src: url('fonts/animals-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/animals-webfont.woff') format('woff'),
+         url('fonts/animals-webfont.ttf') format('truetype'),
+         url('fonts/animals-webfont.svg#AnimalsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'BritishCastilla';
+  src: url('./fonts/ark.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 #navbar{
   z-index: 11;
@@ -26,7 +45,7 @@
   text-align: center;
   transform: translateY(-50%);
 }
-h1{
+.header{
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: clamp(20px, 9vw, 180px);
@@ -209,8 +228,10 @@ h1{
   color: #ececee;
   transition: all 250ms linear;
 }
-.nav ul li a:hover{
+.nav ul li a{
   text-decoration: none;
+}
+.nav ul li a:hover{
   color: yellow;
 }
 .nav ul li a:after{
