@@ -62,13 +62,11 @@
       <p>You entered the <b>XP Zone</b>, this is where you will see my past quests and upgrades.
         Personally, I have been putting a lot of XP points into agility, as I am a core believer
         of <b>Agile Lyfestyle</b>. Throughout the week, I collect feedback and information, trying find
-        ways in which I could further my development, tripling down on my interests and things that
-        are fun. </p>
+        ways in which I could further my development, tripling down on my interests. </p>
         <p>Then, with the collected information I plan out my week, setting clear tasks, categorizing them
           into my main life goals, which in turn helps me prioritize things in the backlog. Following
           my plan, I check my progress every day and refine the backlog. At the end of the week, I
-          take a look at what I have achieved, perhaps pat myself on the back, and then look for ways to
-          improve on my next week.
+          take a look at what I have achieved, and then look for ways to improve next week.
         </p>
         <p>Along with short-term improvement, medium-term and long-term goals share a similar approach,
           which has been working great to keep myself accountable. This website is yet another medium-term
@@ -152,9 +150,10 @@
         </div>
 
         <p>Becoming more and more indulged in the operations of the club, I became
-          the Executive VP of the  club, until later I progressed to the position of
-          a Co-President. With dedicaiton, we are striving towards making StartupUW
-          the central node for student startups that start at UW Seattle.
+          the Executive VP of the  club. With the success of Startup-a-thon, we were
+          able to expand the team to almost double the size, after which I progressed
+          to the position of  a Co-President. With dedicaiton, we are striving towards
+          making StartupUW the central node for student startups that start at UW Seattle.
           <a id="undecoratedLink" target="_blank" href="https://www.startup-uw.com/">
           Click here </a> to check out the club, and the website we built.
 
@@ -181,7 +180,25 @@
       </section>
     </main>
 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
     <script type="text/javascript" >
+      function showImages(el) {
+        var windowHeight = jQuery( window ).height();
+        $(el).each(function(){
+            var thisPos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            if (topOfWindow + windowHeight - 200 > thisPos ) {
+                $(this).fadeTo(1500, 1);
+            }
+        });
+      }
+      $(document).ready(function(){
+              showImages('.image');
+      });
+      $(window).scroll(function() {
+              showImages('.image');
+      });
       gsap.registerPlugin(ScrollTrigger);
 
       const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion)");

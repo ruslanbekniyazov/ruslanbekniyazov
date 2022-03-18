@@ -122,6 +122,7 @@ blockquote
 }
 
 .image{
+  opacity:0.01;
   width: 98%;
   height: auto;
   border-radius: 3px;
