@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="src/css/style.css" />
     <link rel="stylesheet" type="text/css" href="src/css/custom.css" />
     <link rel="stylesheet" type="text/css" href="src/css/index.css">
+    <link rel="icon" href="src/images/Me/rb4.png">
     <script type="text/javascript" src="src/js/modernizr.custom.79639.js"></script>
     <noscript>
       <link rel="stylesheet" type="text/css" href="src/css/styleNoJS.css" />
@@ -23,9 +24,10 @@
       <label for="menu-icon"></label>
       <nav class="nav">
         <ul class="pt-5">
-          <li class="menuListItem"><a href="XP.html">XP+PROJ</a></li>
+          <li class="menuListItem"><a href="XP.html">XP</a></li>
+          <li class="menuListItem"><a href="projects.html">PROJECTS</a></li>
           <li class="menuListItem"><a target="_blank" href="https://drive.google.com/file/d/1d6rRkgM3wx0LjwFFbYdkZMYklOdRV20y/view?usp=sharing">Resume</a></li>
-          <li class="menuListItem"><a href="#">#LYFE</a></li>
+          <li class="menuListItem"><a href="lyfe.html">#LYFE</a></li>
           <div class="footer-social-icons">
             <a href="https://www.linkedin.com/in/ruslan-bekniyazov/" target="_blank" class="social-icon">
               <i class="fa fa-linkedin"></i></a>
@@ -143,15 +145,15 @@
                   if (i == images.length) {
                       i = 0;
                   }
-                  $("#slideshowMyself").fadeOut(3000, function () {
+                  $("#slideshowMyself").fadeOut(2000, function () {
                     $(this).css("background-image", "url(src/images/Me/" + images[i] + ")");
-                    $(this).fadeIn(3000);
+                    $(this).fadeIn(2000);
                   });
-                  $("#location").fadeOut(3000, function () {
+                  $("#location").fadeOut(2000, function () {
                     $("#location").text(captions[i]);
-                    $(this).fadeIn(3000);
+                    $(this).fadeIn(2000);
                   });
-              }, 8000);
+              }, 5900);
           });
 
           var $navArrows = $( '#nav-arrows' ),
