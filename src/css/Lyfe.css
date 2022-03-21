@@ -125,10 +125,13 @@ blockquote
 }
 
 .image{
-  opacity: 0.01;
   width: 100%;
   height: auto;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.appear{
+  opacity: 0.01;
 }
 
 .page-content em {

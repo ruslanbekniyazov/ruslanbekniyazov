@@ -13,7 +13,6 @@
     <title>Lyfe</title>
     <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
-    <script src="https://use.fontawesome.com/8f40d88ff0.js"></script>
   </head>
   <body>
     <!-- The navbar -->
@@ -58,7 +57,7 @@
     <main class="page-content">
       <section class="page-content__section" data-bg-color="white">
         <h2 id="title">More Lyfe</h2>        <div class="imageContainer">
-          <img class="image" src="src/images/Activities/el salvador.jpg">
+          <img class="image appear" src="src/images/Activities/el salvador.jpg">
         </div>
         <p>Welcome to my <b>Lyfe</b>, page dedicated to what I do in my spare time,
           split into 4 sections: active, personal, academic, and professional activities.
@@ -79,7 +78,7 @@
           past 4 years, I've been refereeing soccer games in the western side of WA. Favorite team:
         </p>
         <div class="imageContainer">
-          <img class="image" src="src/images/Activities/barcelona.jpg">
+          <img class="image appear" src="src/images/Activities/barcelona.jpg">
         </div>
 
         <p> And this year, my newfound hobbies of <b>snowboarding</b> 🏂 and <b>golf</b>⛳, both of which I
@@ -87,10 +86,10 @@
         </p>
 
         <div class="imageContainer">
-          <img class="image" src="src/images/Activities/snowboarding.JPG">
+          <img class="image appear" src="src/images/Activities/snowboarding.JPG">
         </div>
         <div class="imageContainer">
-          <img class="image" src="src/images/Activities/golf.jpg">
+          <img class="image appear" src="src/images/Activities/golf.jpg">
         </div>
 
       </section>
@@ -102,7 +101,7 @@
           have found their way to my playlists. And my favorite instrument? <b>Piano:</b>
         </p>
         <div class="imageContainer">
-          <img class="image" src="src/images/Activities/piano.gif">
+          <video autoplay loop muted class="appear" width="100%" src="src/images/Activities/piano.mp4" alt="Playing piano"></video>
         </div>
 
         <p><b>Travel</b> has not only been an interest, but also a necessity as my family
@@ -112,7 +111,7 @@
           so far? Puerto Vallarta:
         </p>
         <div class="imageContainer">
-          <img class="image" src="src/images/Activities/pv.jpg">
+          <img class="image appear" src="src/images/Activities/pv.jpg">
         </div>
       </section>
 
@@ -139,7 +138,7 @@
           creative endeavors.
         </p>
         <div class="imageContainer">
-          <img class="image" src="src/images/Activities/pantheon-in-rome.jpg">
+          <img class="image appear" src="src/images/Activities/pantheon-in-rome.jpg">
         </div>
 
 
@@ -195,10 +194,10 @@
         });
       }
       $(document).ready(function(){
-              showImages('.image');
+        showImages('.appear');
       });
       $(window).scroll(function() {
-              showImages('.image');
+        showImages('.appear');
       });
 
 
