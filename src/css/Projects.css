@@ -2,6 +2,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 a{
@@ -16,8 +17,8 @@ svg {
 }
 
 #table{
-  animation: pulse 2s;
-  animation-iteration-count: 2;
+  animation: pulse 1.5s;
+  animation-iteration-count: 3;
   background: #ffffff;
   height: 100vh;
   display: flex;
@@ -76,8 +77,12 @@ h1{
   color:black;
   font-family: BritishCastilla;
   text-align: center;
-  padding: clamp(20px, 5vw, 100px);
   font-size: clamp(70px, 12vw, 150px);
+  padding: clamp(20px, 5vw, 100px);
+}
+
+.skills{
+  padding-top: 20px;
 }
 
 h3 {
@@ -117,7 +122,6 @@ h6 {
 	padding: 15px;
 	text-align: center;
 	position: absolute;
-  font-size: 18px;
   letter-spacing: 2px;
 }
 
@@ -125,7 +129,6 @@ h6 {
 	color: #635757;
 	display: block;
 	margin: 40px 0px;
-	font-size: 200%;
 }
 
 #portfolio .description {
@@ -137,12 +140,10 @@ h6 {
 
 #portfolio .description > * {
 	display: none;
-	font-size: 72%;
 }
 
 #portfolio p {
 	color: #F0F0F0;
-  font-size: 100%;
 	margin-bottom: 30px;
 	line-height: 230%;
 }
@@ -246,6 +247,42 @@ h6 {
 	transition: top .9s;
 }
 
+/* Running Line */
+
+.running {
+  text-align: center;
+  overflow: hidden;
+  font-family: "Pridi", sans-serif;
+  font-weight: 600;
+  font-size: clamp(9px, 1.5vw, 25px);
+  text-transform: uppercase;
+}
+
+.running__inner {
+  display: flex;
+}
+
+.running__line {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 10px 15px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: runningLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes runningLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 /* Media Queries */
 
@@ -279,7 +316,6 @@ h6 {
 
 @media screen and (max-width: 790px) {
 	body {
-		font-size: 18px;
 		text-align: center;
 	}
 
@@ -289,14 +325,6 @@ h6 {
 
 	#portfolio .description p {
 		margin-top: 40px;
-	}
-
-	#portfolio section {
-		font-size: 10px;
-	}
-
-	#portfolio .overlay > * {
-		font-size: 200%;
 	}
 
 	#portfolio p, h6 {
@@ -332,7 +360,6 @@ h6 {
 
 	#portfolio .heading {
 		display: table-header-group;
-		font-size: 180%;
 		text-align: left;
 	}
 
@@ -363,6 +390,9 @@ h6 {
 }
 
 @media screen and (max-width: 480px) {
+  h1{
+    padding-top: 70px;
+  }
 	#portfolio .overlay {
 		height: 70%;
 	}
