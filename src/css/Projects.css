@@ -258,6 +258,15 @@ h6 {
   text-transform: uppercase;
 }
 
+.running2 {
+  text-align: center;
+  overflow: hidden;
+  font-family: "Pridi", sans-serif;
+  font-weight: 600;
+  font-size: clamp(15px, 2.5vw, 25px);
+  text-transform: uppercase;
+}
+
 .running__inner {
   display: flex;
 }
