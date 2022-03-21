@@ -131,10 +131,6 @@
 	margin: -130px 0 0 -130px;
 	box-shadow: inset 0 0 0 10px #f7f7f7;
 	border-radius: 50%;
-  background-image: url("../images/Me/snowboarding.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .demo-1 .sl-slide h2 {
