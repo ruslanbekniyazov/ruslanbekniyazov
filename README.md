@@ -1,6 +1,6 @@
 ### Welcome to My Documentary 👋
 
-### [LinkedIn](https://www.linkedin.com/in/ruslan-bekniyazov/) | [Instagram](https://www.instagram.com/shkeeper_/) | [Gmail](https://mail.google.com/mail/?view=cm&source=mailto&to=rus.bekniyazov@gmail.com)
+### [LinkedIn](https://www.linkedin.com/in/ruslan-bekniyazov/) | [Instagram](https://www.instagram.com/shkeeper_/) | [Gmail](https://mail.google.com/mail/?view=cm&source=mailto&to=rus.bekniyazov@gmail.com) | [Personal Website](https://www.ruslanbekniyazov.com)
 
 ### :tada: Latest Update (Mar 2022):
 * Working on improving design skills
