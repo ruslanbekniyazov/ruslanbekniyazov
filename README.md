@@ -1,4 +1,4 @@
-### Welcome to GitHub 👋
+### Welcome to my GitHub page 👋
 
 ### [LinkedIn](https://www.linkedin.com/in/ruslan-bekniyazov/) | [Instagram](https://www.instagram.com/shkeeper_/) | [Gmail](https://mail.google.com/mail/?view=cm&source=mailto&to=rus.bekniyazov@gmail.com) | [Personal Website](https://www.ruslanbekniyazov.com)
 
