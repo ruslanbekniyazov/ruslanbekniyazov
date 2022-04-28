@@ -2,7 +2,9 @@
 
 ### [LinkedIn](https://www.linkedin.com/in/ruslan-bekniyazov/) | [Instagram](https://www.instagram.com/shkeeper_/) | [Gmail](https://mail.google.com/mail/?view=cm&source=mailto&to=rus.bekniyazov@gmail.com) | [Personal Website](https://www.ruslanbekniyazov.com)
 
-### :tada: Latest Update (Mar 2022):
+* NOTE: I only recently switched over to GitHub for version-control, before I used GitLab for the most part, and Unity Collaborate for game development.
+
+### :tada: Latest Update (April 2022):
 * Working on improving design skills
 * Recreating my old website with my new design skills
 * Hosting a startup competition in April, learn more about my entrepreneurship club at [StartupUW](https://startup-uw.com/)
