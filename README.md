@@ -2,7 +2,7 @@
 
 ### [LinkedIn](https://www.linkedin.com/in/ruslan-bekniyazov/) | [Instagram](https://www.instagram.com/shkeeper_/) | [Gmail](https://mail.google.com/mail/?view=cm&source=mailto&to=rus.bekniyazov@gmail.com) | [Personal Website](https://www.ruslanbekniyazov.com)
 
-* NOTE: I only recently switched over to <b> GitHub </b> for version-control, before I used GitLab for the most part, and Unity Collaborate for game development.
+* <b>NOTE:</b> I only recently switched over to <b> GitHub </b> for version-control, before I used GitLab for the most part, and Unity Collaborate for game development.
 
 ### :tada: Latest Update (April 2022):
 * Working on improving design skills
