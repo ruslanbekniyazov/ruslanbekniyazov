@@ -4,9 +4,8 @@
 
 * <b>NOTE:</b> I only recently (in March 2022) switched over to <b> GitHub </b> for version control, before I used GitLab for the most part, and Unity Collaborate for version control in game development.
 
-### :tada: Latest Update (October 2022):
-* Interning as an SDE @Amazon, on Alexa AI
-* House of the Dragon is too good
+### :tada: Latest Update (December 2022):
+* Merry Christmas, looking forward to working on projects this quarter!
 
 # Who I am
 
