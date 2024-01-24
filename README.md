@@ -12,7 +12,7 @@
 
 If I have not had the pleasure to introduce myself to you, then this is the perfect opportunity to do the intro. My name is Ruslan Bekniyazov, I live in Seattle, WA, and I am a Software Engineer at the Microsoft, and a Computer Science UW Seattle graduate. I was born in Ashgabat, Turkmenistan (pls lookup "The City of White Marble" 😀). I develop anything that fascinates: games, VR projects, apps, websites.
 
-## Check out: My Personal Website (ruslanbekniyazov.com)
-* Used HTML, CSS, JavaScript, Bootstrap, JQuery + Figma for ideation
+#### Check out: My Personal Website (ruslanbekniyazov.com)
 * Contains a big portion of my portfolio and my experiences
 * Has a carefully curated style and structure
+* Tools used: HTML, CSS, JavaScript, Bootstrap, JQuery + Figma for ideation
