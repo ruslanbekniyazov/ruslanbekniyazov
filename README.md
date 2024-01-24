@@ -1,6 +1,6 @@
 ### Welcome to my GitHub page 👋
 
-### [LinkedIn](https://www.linkedin.com/in/ruslan-bekniyazov/) | [Instagram]([https://www.instagram.com/ruslan.bekn/]) | [Gmail](https://mail.google.com/mail/?view=cm&source=mailto&to=rus.bekniyazov@gmail.com) | [Personal Website](https://www.ruslanbekniyazov.com)
+### [LinkedIn](https://www.linkedin.com/in/ruslan-bekniyazov/) | [Instagram](https://www.instagram.com/ruslan.bekn/) | [Gmail](https://mail.google.com/mail/?view=cm&source=mailto&to=rus.bekniyazov@gmail.com) | [Personal Website](https://www.ruslanbekniyazov.com)
 
 * Note: I only recently switched over to <b> GitHub </b> for version control, before I used GitLab for the most part, and Unity Collaborate for version control in game development.
 
