@@ -8,7 +8,7 @@
 ## 🚀 Latest
 
 * **Oct 31, 2025 — Inflerra.com**: Building a next-gen, AI‑powered influencer–brand matchmaking platform. Shipping features around AI matching, campaign deliverables, escrow, and analytics.
-* **Apr 2025 **: Experimentation with Multi‑agent RL.
+* **Apr 2025**: Experimentation with Multi‑agent RL.
 * **Jan 2025 — VR Stealth Game**: Prototyping a Splinter‑Cell‑inspired stealth‑heavy VR title.
 * **Aug 3 2024** — **Tunnel Ball: Neondash** released on the [App Store](https://apps.apple.com/us/app/tunnel-ball-neondash/id6457107717). Neon cyber‑tunnel runner with curated soundtrack and leaderboards.
 
