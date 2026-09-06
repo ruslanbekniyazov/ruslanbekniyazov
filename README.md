@@ -7,6 +7,7 @@
 
 ## 🚀 Latest
 
+* **2026 — Salesforce**: Building AI infrastructure and agentic systems across distributed compute and cloud AI platforms.
 * **Oct 2025 — Inflerra.com**: Building a next-gen, AI‑powered influencer–brand matchmaking platform. Shipping features around AI matching, campaign deliverables, escrow, and analytics.
 * **Apr 2025** — Experimentation with Multi‑agent RL.
 * **Jan 2025 — VR Stealth Game**: Prototyping a Splinter‑Cell‑inspired stealth‑heavy VR title.
@@ -16,7 +17,7 @@
 
 ## 👨‍💻 About me
 
-I’m **Ruslan Bekniyazov**, a Seattle‑based Software Engineer at **Microsoft**, UW Computer Science grad, and current MSCS at Georgia Tech. I build whatever fascinates me—games, VR, apps, and full‑stack web.
+I’m **Ruslan Bekniyazov**, a Seattle-based **Senior Software Engineer at Salesforce** working on AI infrastructure, distributed compute, and agentic systems. I’m a UW Computer Science graduate and an MSCS student at Georgia Tech. Outside work, I build products, games, and experiments that keep me close to users.
 
 ---
 
@@ -42,10 +43,10 @@ I’m **Ruslan Bekniyazov**, a Seattle‑based Software Engineer at **Microsoft*
 
 ## 🔧 Tech I use most
 
-* **Backend**: Java, Python, Go, SQL, C++, Supabase, Serverless
+* **Backend**: Python, Java, Go, SQL, C++, Supabase, Serverless
 * **Frontend**: React, TypeScript, Next.js, Tailwind
-* **Infra**: Azure, Docker, Kubernetes, Terraform, Stripe Connect, Vercel
-* **Data/AI**: PyTorch, LangChain, TensorFlow, Ollama, Hugging Face, Weights & Biases, Azure ML
+* **Infra**: AWS, GCP, Azure, Ray, Kubernetes, Docker, Terraform
+* **Data/AI**: Vertex AI, SageMaker, HyperPod, PyTorch, TensorFlow, Hugging Face, Weights & Biases
 * **Game Dev**: Unity (C#), AI level gen, Reinforcement Learning
 
 ---
