@@ -96,10 +96,8 @@ html:has(.page-projects), html:has(.page-experience) { background: #090c10; }
 .page-projects .stack-list { gap: .4rem .65rem; padding-top: 1.4rem; }
 .page-projects .stack-list li { border: 0; padding: 0; background: none; border-radius: 0; font-size: .59rem; line-height: 1.8; }
 .page-projects .stack-list li:not(:last-child)::after { content: "/"; color: #526168; margin-left: .65rem; }
-.page-projects .collection-heading { padding-block: 1rem 3rem; }
-.page-projects .collection-heading .eyebrow { margin-bottom: 1rem; }
+.page-projects .collection-heading { padding-bottom: 1.5rem; }
 .page-projects .collection-heading h2 { font-family: var(--site-display); font-size: clamp(2.3rem, 4vw, 4rem); font-weight: 400; line-height: 1.1; letter-spacing: -.055em; }
-.page-projects .collection-heading h2 em { color: #a1d3c8; font-family: var(--site-serif); font-weight: 400; }
 .page-projects .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(3rem, 5vw, 5rem) 2.5rem; }
 .page-projects .project-card { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; overflow: visible; }
 .page-projects .project-card:hover { transform: none; }
@@ -146,7 +144,13 @@ html:has(.page-projects), html:has(.page-experience) { background: #090c10; }
 .page-projects .portal-copy, .page-experience .portal-copy { max-width: 38rem; font-size: .88rem; line-height: 1.8; }
 .page-projects .portal-btn, .page-experience .portal-btn { padding: .8rem 0; gap: 1.25rem; border: 0; border-bottom: 1px solid var(--border-strong); border-radius: 0; background: none; box-shadow: none; color: var(--text-primary); font-size: .8rem; font-weight: 400; }
 .page-projects .portal-btn + .portal-btn, .page-experience .portal-btn + .portal-btn { margin-left: 1.5rem; }
-.page-projects .portal-btn:hover, .page-experience .portal-btn:hover { box-shadow: none; transform: none; color: #a1d3c8; }
+.page-projects .portal-btn:is(:hover, :focus-visible),
+.page-experience .portal-btn:is(:hover, :focus-visible) {
+  border-bottom-color: #a1d3c8;
+  box-shadow: none;
+  transform: none;
+  color: #a1d3c8;
+}
 .page-projects .telemetry-ticker, .page-experience .telemetry-ticker { position: relative; padding-block: .8rem; background: #0c1116; }
 .page-projects .ticker-track, .page-experience .ticker-track { font-size: .52rem; color: #849198; }
 .page-projects .lightbox, .page-experience .lightbox { z-index: 130; }

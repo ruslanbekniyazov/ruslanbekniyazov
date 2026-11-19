@@ -101,6 +101,7 @@
      ========================================================= */
 
   const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
+  const resultsTitle = document.getElementById("project-results-title");
   const filterThemes = {
     all: { colors: ["#a1d3c8", "#9bbfc9"], mode: 0 },
     ai: { colors: ["#a1d3c8", "#a1d3c8"], mode: 1 },
@@ -154,8 +155,28 @@
     });
   }
 
+  function revealFirstProject() {
+    const firstProject = cards.find((card) => !card.classList.contains("is-hidden"));
+    if (!firstProject) return;
+
+    const media = firstProject.querySelector(".media-box") || firstProject;
+    const viewportHeight = window.innerHeight;
+    const { top, height } = media.getBoundingClientRect();
+    const previewBottom = top + Math.min(height, viewportHeight * 0.3, 200);
+    const distance = Math.ceil(previewBottom + 16 - viewportHeight);
+
+    if (distance > 0) {
+      window.scrollBy({ top: distance, behavior: motionPref.matches ? "auto" : "smooth" });
+    }
+  }
+
   filterButtons.forEach((btn) => {
-    btn.addEventListener("click", () => applyFilter(btn.dataset.filter || "all"));
+    btn.addEventListener("click", () => {
+      applyFilter(btn.dataset.filter || "all");
+      const title = btn.textContent.trim();
+      if (resultsTitle.textContent !== title) resultsTitle.textContent = title;
+      revealFirstProject();
+    });
   });
 
   /* =========================================================

@@ -90,7 +90,12 @@
     const cy = Math.cos(rotateY), sy = Math.sin(rotateY);
     const cx = Math.cos(rotateX), sx = Math.sin(rotateX);
     const cz = Math.cos(rotateZ), sz = Math.sin(rotateZ);
-    const scale = Math.min(width * .255, height * .32);
+    // The orbital trace extends beyond the torus's projected radius at every tilt.
+    const traceRadius = 2.15;
+    const edgePadding = 12;
+    const scale = Math.max(0, Math.min(width, height) / 2 - edgePadding) / traceRadius;
+    const centerX = width / 2;
+    const centerY = height / 2;
     const projected = points.map(point => {
       const x1 = point.x * cy + point.z * sy;
       const z1 = -point.x * sy + point.z * cy;
@@ -99,7 +104,7 @@
       const x3 = x1 * cz - y2 * sz;
       const y3 = x1 * sz + y2 * cz;
       const perspective = 5.6 / (5.6 - z2);
-      return { x: width * .53 + x3 * scale * perspective, y: height * .49 + y3 * scale * perspective, z: z2, seed: point.seed };
+      return { x: centerX + x3 * scale * perspective, y: centerY + y3 * scale * perspective, z: z2, seed: point.seed };
     }).sort((a, b) => a.z - b.z);
     projected.forEach(point => {
       const depth = (point.z + 2) / 4;
@@ -112,12 +117,12 @@
     });
     // A fine orbital trace gives the field structure without a texture asset.
     context.save();
-    context.translate(width * .53, height * .49);
+    context.translate(centerX, centerY);
     context.rotate(-.45);
     context.strokeStyle = "rgba(155, 195, 194, .1)";
     context.lineWidth = .6;
     context.beginPath();
-    context.ellipse(0, 0, scale * 2.15, scale * 1.16, 0, 0, Math.PI * 2);
+    context.ellipse(0, 0, scale * traceRadius, scale * 1.16, 0, 0, Math.PI * 2);
     context.stroke();
     context.restore();
   };
