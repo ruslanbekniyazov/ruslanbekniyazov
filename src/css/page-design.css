@@ -134,7 +134,7 @@ html:has(.page-projects), html:has(.page-experience) { background: #090c10; }
 .page-experience .chapter-body { font-size: .87rem; line-height: 1.9; }
 .page-experience .arch-diagram, .page-experience .impact-tile, .page-experience .telemetry-card, .page-experience .mini-metric { border-radius: .2rem; background: rgba(18, 25, 31, .55); }
 .page-experience .pillar-item h3, .page-experience .impact-tile h3 { font-weight: 500; }
-.page-experience .impact-metric, .page-experience .mini-metric strong { font-weight: 400; }
+.page-experience .mini-metric strong { font-weight: 400; }
 .page-experience .media-frame, .page-experience .photo-trigger, .page-experience .photo-trigger img { border-radius: .15rem; }
 .page-projects .portal-section, .page-experience .portal-section { padding-block: 1rem 5rem; }
 .page-projects .portal-card, .page-experience .portal-card { padding: 3.5rem 0 1rem; border: 0; border-top: 1px solid var(--border-subtle); border-radius: 0; background: none; box-shadow: none; }
