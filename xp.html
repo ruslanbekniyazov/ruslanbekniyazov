@@ -1,297 +1,641 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ruslan Bekniyazov's experience across AI infrastructure, distributed systems, and product engineering." />
-    <meta name="keywords" content="Ruslan Bekniyazov, Senior Software Engineer, Salesforce, AI Infrastructure, Distributed Systems, Ray, AWS, GCP" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ruslan Bekniyazov - Senior Software Engineer building AI infrastructure, LLM inference optimization, and distributed systems at scale.">
+  <meta name="keywords" content="Ruslan Bekniyazov, Senior Software Engineer, Salesforce, AI Infrastructure, LLM Inference Optimization, Distributed Systems, Agentic Systems, Ray, AWS, GCP, Microsoft, Amazon">
+  <meta name="theme-color" content="#06080d">
 
-    <meta property="og:title" content="Experience — Ruslan Bekniyazov">
-    <meta property="og:type" content="profile">
-    <meta property="og:description" content="AI infrastructure, distributed systems, and product engineering.">
-    <meta property="og:image" content="src/images/Me/microsoft2.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="700">
-    <meta property="og:url" content="https://www.ruslanbekniyazov.com/xp.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Experience — Ruslan Bekniyazov">
-    <meta name="twitter:description" content="AI infrastructure, distributed systems, and product engineering.">
-    <meta name="twitter:image" content="src/images/Me/microsoft2.jpg">
+  <meta property="og:title" content="Experience - Ruslan Bekniyazov">
+  <meta property="og:description" content="I build AI infrastructure, LLM inference optimization, distributed systems, and products at scale across Salesforce, Microsoft, and Amazon.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://www.ruslanbekniyazov.com/xp.html">
+  <meta property="og:image" content="https://www.ruslanbekniyazov.com/src/images/Me/microsoft2.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Experience - Ruslan Bekniyazov">
+  <meta name="twitter:description" content="I build AI infrastructure, LLM inference optimization, distributed systems, and products at scale.">
+  <meta name="twitter:image" content="https://www.ruslanbekniyazov.com/src/images/Me/microsoft2.jpg">
 
-    <link rel="stylesheet" type="text/css" href="src/css/XP.css">
-    <link rel="stylesheet" type="text/css" href="src/css/index.css">
-    <link rel="icon" href="src/images/Me/rb4.png">
-    <title>Experience — Ruslan Bekniyazov</title>
+  <title>Experience - Ruslan Bekniyazov</title>
+  <link rel="icon" type="image/svg+xml" href="src/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/index.css">
+  <link rel="stylesheet" href="src/css/XP.css">
+  <script defer src="src/js/xp-scene.js"></script>
+  <link rel="stylesheet" href="src/css/page-design.css?v=2">
+  <link rel="stylesheet" href="src/css/site-nav.css">
+  <script defer src="src/js/site.js"></script>
+</head>
+<body class="page-experience" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  </head>
-  <body>
+  <!-- Ambient scroll-reactive particle field -->
+  <canvas id="constellation-canvas" aria-hidden="true"></canvas>
 
-    <!-- The navbar -->
-    <div id="navbar">
-      <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
-      <label for="menu-icon"></label>
-      <nav class="nav">
-        <ul class="pt-5">
-          <li class="menuListItem"><a href="index.html">Home</a></li>
-          <li class="menuListItem"><a href="projects.html">PROJECTS</a></li>
-          <li class="menuListItem"><a target="_blank" href="https://www.canva.com/design/DAE35KuJEpw/0s_zuq88y1Cmf-UZ-S3BhA/view?utm_content=DAE35KuJEpw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Resume</a></li>
-          <li class="menuListItem"><a href="lyfe.html">#LYFE</a></li>
-          <div class="footer-social-icons">
-            <a href="https://www.linkedin.com/in/ruslan-bekniyazov/" target="_blank" class="social-icon">
-              <i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/ruslanbekniyazov" target="_blank" class="social-icon">
-              <i class="fa fa-github"></i></a>
-            <a href="https://www.instagram.com/shkeeper_/" target="_blank" class="social-icon">
-              <i class="fa fa-instagram"></i></a>
-            <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=rus.bekniyazov@gmail.com" target="_blank" class="social-icon"> <i class="fa fa-envelope"></i></a>
-          </div>
-        </ul>
-      </nav>
-    </div>
+  <!-- Top scroll progress beam -->
+  <div id="scroll-beam" aria-hidden="true"></div>
 
-    <div class="marquee-container">
-      <div class="marquee marquee--top">
-        <div></div>
-      </div>
-      <div class="marquee marquee--right">
-        <div></div>
-      </div>
-      <div class="marquee marquee--bottom">
-        <div></div>
-      </div>
-      <div class="marquee marquee--left">
-        <div></div>
-      </div>
-    </div>
+  <header class="site-header" data-tone="dark">
+    <a class="site-brand" href="index.html" aria-label="Ruslan Bekniyazov, home"><span class="brand-mark" aria-hidden="true">rb<span>.</span></span><span class="brand-caption">RUSLAN BEKNIYAZOV</span></a>
+    <nav class="site-links" aria-label="Main navigation"><a href="xp.html" aria-current="page">Experience</a><a href="projects.html">Projects</a><a href="lyfe.html">#LYFE</a></nav>
+    <div class="site-actions"><nav class="header-socials" aria-label="Social links"><a href="https://www.instagram.com/shkeeper_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="site-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r=".8" fill="currentColor" stroke="none"/></svg></a><a href="https://www.linkedin.com/in/ruslan-bekniyazov/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="site-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.4 7.9H1.8V22h3.6V7.9ZM3.6 2a2.1 2.1 0 1 0 0 4.2 2.1 2.1 0 0 0 0-4.2ZM22 13.9c0-4.2-2.2-6.2-5.1-6.2a4.4 4.4 0 0 0-4 2.2v-2H9.3V22h3.6v-7.7c0-2 .4-3.8 2.9-3.8s2.6 2.2 2.6 4V22H22v-8.1Z"/></svg></a><a href="https://github.com/ruslanbekniyazov" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="site-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></a></nav><a class="site-contact" href="mailto:rus.bekniyazov@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a></div>
+  </header>
 
-    <main class="page-content">
-      <section class="page-content__section" data-bg-color="black">
-      <h2 id="title">Experience, <u>Growth</u></h2>
-      <p>Here live my current and selected past work experiences.</p>
-            <blockquote><p id="quote"> "The only source of knowledge is experience."
-            </p><div class="alignRight"><cite>-Albert Einstein</cite></div></blockquote>
-        </section>
+  <main id="main">
+    <!-- HERO: First-Person Editorial Left + Interactive Trajectory Deck & 3D Wavefield Right -->
+    <section class="shell hero" aria-labelledby="experience-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="experience-title">Experience</h1>
 
-        <section class="page-content__section" data-bg-color="#7FBA00">
-          <h2>2026 - Current - Senior SWE, Salesforce</h2>
-
-          <p>
-            I work on AI infrastructure and agentic systems: the platform layer that helps teams train,
-            operate, and scale increasingly capable AI workloads. My work spans distributed compute and
-            cloud AI ecosystems, including Ray, Amazon SageMaker and HyperPod, Google Cloud, and Vertex AI.
+          <p class="hero-subhead">
+            Senior Software Engineer at Salesforce building the platform behind Agentforce and large-scale LLM serving. Previously, I worked on Teams and Viva Engage at Microsoft and made machine learning workflows faster at Amazon Alexa AI.
           </p>
+        </div>
 
-          <ul>
-            <li>AI infrastructure and platforms for production ML workloads.</li>
-            <li>Distributed compute across Ray, AWS, and GCP ecosystems.</li>
-            <li>Infrastructure patterns for modern agentic systems.</li>
-          </ul>
+        <!-- Interactive Career Trajectory Deck + 3D Particle Wavefield Stage -->
+        <div class="trajectory-deck" aria-label="Interactive career trajectory and 3D compute wavefield">
+          <canvas id="hero-canvas" aria-hidden="true"></canvas>
 
-        </section>
+          <div class="deck-overlay">
+            <div class="deck-header">
+              <span class="deck-kicker">CAREER TRAJECTORY</span>
+              <button class="motion-toggle" id="motion-toggle-btn" type="button">Pause wave</button>
+            </div>
 
-        <section class="page-content__section" data-bg-color="#3b3f46">
-          <h2>2023 - 2026 - Software Engineer II, Microsoft</h2>
+            <div class="trajectory-list" role="navigation" aria-label="Quick jump to career chapters">
+              <button class="trajectory-row is-active" type="button"
+                data-target="#salesforce"
+                data-color="#a1d3c8"
+                data-accent="#9bbfc9"
+                data-energy="1.25">
+                <span class="traj-year">2026 - Now</span>
+                <span class="traj-main">
+                  <strong>Salesforce</strong>
+                  <span>Agentforce platform, LLM serving &amp; Ray compute</span>
+                </span>
+                <span class="traj-arrow" aria-hidden="true">→</span>
+              </button>
 
-          <p> 
-            Over roughly three years at Microsoft, I worked in Viva Engage on Teams Q&amp;A and live-event experiences used at significant scale.
-            The role combined product execution with cross-team platform work across Microsoft 365, Teams,
-            compliance, government cloud, and applied AI.
-          </p>
-          <div class="imageContainer">
-            <img class="image" src="src/images/Me/msftTeam.png">
+              <button class="trajectory-row" type="button"
+                data-target="#microsoft"
+                data-color="#a6a6c9"
+                data-accent="#c1abc9"
+                data-energy="1.05">
+                <span class="traj-year">2023 - 2026</span>
+                <span class="traj-main">
+                  <strong>Microsoft</strong>
+                  <span>Teams Live Events, Teams Q&amp;A &amp; Viva Engage</span>
+                </span>
+                <span class="traj-arrow" aria-hidden="true">→</span>
+              </button>
+
+              <button class="trajectory-row" type="button"
+                data-target="#amazon"
+                data-color="#d1b18c"
+                data-accent="#ca9da7"
+                data-energy="1.15">
+                <span class="traj-year">2022</span>
+                <span class="traj-main">
+                  <strong>Amazon</strong>
+                  <span>Alexa AI training cache &amp; parallel ML testing</span>
+                </span>
+                <span class="traj-arrow" aria-hidden="true">→</span>
+              </button>
+
+              <button class="trajectory-row" type="button"
+                data-target="#startupuw"
+                data-color="#b3a0c6"
+                data-accent="#d3c29a"
+                data-energy="0.95">
+                <span class="traj-year">2022</span>
+                <span class="traj-main">
+                  <strong>StartupUW</strong>
+                  <span>Co-President, Startup-a-thon &amp; UW founders</span>
+                </span>
+                <span class="traj-arrow" aria-hidden="true">→</span>
+              </button>
+
+              <button class="trajectory-row" type="button"
+                data-target="#microsoft-explore"
+                data-color="#c7aa8b"
+                data-accent="#d2c49c"
+                data-energy="0.9">
+                <span class="traj-year">2020 - 2022</span>
+                <span class="traj-main">
+                  <strong>Early Engineering &amp; VR</strong>
+                  <span>Yammer GDPR, iD Tech VR &amp; MSFT Explore</span>
+                </span>
+                <span class="traj-arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <div class="deck-footer">
+              <span>Hover to shift field · Click to jump · Drag wave</span>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <ul>
-              <li>Helped scale Teams Q&amp;A monthly active usage by 4× through a series of <a href="https://support.microsoft.com/en-us/office/q-a-in-microsoft-teams-meetings-f3c84c72-57c3-4b6d-aea5-67b11face787">core product features</a>.</li>
-              <li>Supported the <a href="https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview">transition of Viva Engage events</a> from Microsoft Stream to Teams Live Events.</li>
-              <li>Integrated <a href="https://learn.microsoft.com/en-us/sharepoint/hold-town-hall-using-viva-engage">Teams Town Hall</a> into Viva Engage.</li>
-              <li>Obtained CJIS clearance and helped enable Teams Q&amp;A for the Government Community Cloud.</li>
-              <li>Contributed to Teams Copilot and AI-assisted Q&amp;A experiences.</li>
+    <!-- CHRONICLE: Sticky Timeline Rail + Chapter Cards -->
+    <section class="shell timeline-shell" aria-label="Career chronicle">
+      <aside class="era-rail" aria-label="Era navigation">
+        <div class="era-rail-inner">
+          <nav class="era-nav" aria-label="Career eras">
+            <div class="era-track-line" aria-hidden="true">
+              <div class="era-track-fill" id="era-track-fill"></div>
+            </div>
+            <ul class="era-list">
+              <li>
+                <a class="era-link is-active" href="#salesforce" data-era-target="salesforce">
+                  <span class="era-dot" aria-hidden="true"></span>
+                  <span class="era-meta">
+                    <span class="era-year">2026-Now</span>
+                    <span class="era-name">Salesforce</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="era-link" href="#microsoft" data-era-target="microsoft">
+                  <span class="era-dot" aria-hidden="true"></span>
+                  <span class="era-meta">
+                    <span class="era-year">2023-26</span>
+                    <span class="era-name">Microsoft</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="era-link" href="#amazon" data-era-target="amazon">
+                  <span class="era-dot" aria-hidden="true"></span>
+                  <span class="era-meta">
+                    <span class="era-year">2022</span>
+                    <span class="era-name">Amazon</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="era-link" href="#microsoft-intern" data-era-target="microsoft-intern">
+                  <span class="era-dot" aria-hidden="true"></span>
+                  <span class="era-meta">
+                    <span class="era-year">2022</span>
+                    <span class="era-name">MSFT Intern</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="era-link" href="#startupuw" data-era-target="startupuw">
+                  <span class="era-dot" aria-hidden="true"></span>
+                  <span class="era-meta">
+                    <span class="era-year">2022</span>
+                    <span class="era-name">StartupUW</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="era-link" href="#id-tech" data-era-target="id-tech">
+                  <span class="era-dot" aria-hidden="true"></span>
+                  <span class="era-meta">
+                    <span class="era-year">2021</span>
+                    <span class="era-name">iD Tech</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="era-link" href="#microsoft-explore" data-era-target="microsoft-explore">
+                  <span class="era-dot" aria-hidden="true"></span>
+                  <span class="era-meta">
+                    <span class="era-year">2020</span>
+                    <span class="era-name">MSFT Explore</span>
+                  </span>
+                </a>
+              </li>
             </ul>
+          </nav>
+        </div>
+      </aside>
 
-        </section>
+      <div class="chapters-column" id="chapters-column">
+        <!-- CHAPTER 01: SALESFORCE -->
+        <article class="chapter-card is-featured" id="salesforce"
+          data-index="01"
+          data-era="2026 · SALESFORCE"
+          data-ticker="SALESFORCE · SENIOR SWE // INFERENCE OPTIMIZATION // RAY COMPUTE // 11M+ AGENT INVOCATIONS // AWS & GCP VERTEX AI"
+          data-color="#a1d3c8"
+          data-accent="#9bbfc9">
+          <div class="chapter-glow" aria-hidden="true"></div>
+          <header class="chapter-header">
+            <p class="chapter-kicker"><time datetime="2026">2026</time>-Present</p>
+            <h2>Salesforce</h2>
+            <p class="chapter-role">Senior Software Engineer · AI Infrastructure &amp; Agentic Systems</p>
+          </header>
 
-        <section class="page-content__section" data-bg-color="#F25022">
-          <h2>2022 - Amazon SDE Internship </h2>
-  
-          <p>
-            On Alexa AI, I improved the systems behind Natural Language Understanding workflows. I designed a solution
-            that reduced training-set generation time by 80%, then built a caching layer that cut regression triage for
-            data scientists from roughly a day to minutes.
+          <p class="chapter-lead">
+            Building the AI platform and model-serving backbone behind Agentforce at enterprise scale.
           </p>
-          <div class="imageContainer">
-            <img class="image" src="src/images/Me/spheres.jpg">
+
+          <!-- Interactive High-Level Platform Stack -->
+          <div class="arch-diagram" aria-label="Interactive Salesforce AI platform architecture">
+            <div class="arch-header">
+              <span class="arch-label">Core Focus Areas</span>
+              <span class="arch-hint" id="arch-stage-detail">Designed core Agentforce orchestration services powering 11M+ daily agent invocations.</span>
+            </div>
+            <div class="arch-pipeline">
+              <button class="arch-node is-selected" type="button"
+                data-arch-info="Designed core Agentforce orchestration services powering 11M+ daily agent invocations.">
+                <span class="arch-node-step">01</span>
+                <span class="arch-node-name">Agentic Orchestration</span>
+                <span class="arch-node-sub">11M+ Daily Invocations</span>
+              </button>
+              <div class="arch-connector" aria-hidden="true"><span class="arch-packet"></span></div>
+              <button class="arch-node" type="button"
+                data-arch-info="Optimize production LLM serving for high throughput, low latency, and cost efficiency.">
+                <span class="arch-node-step">02</span>
+                <span class="arch-node-name">LLM Serving</span>
+                <span class="arch-node-sub">Latency &amp; Throughput</span>
+              </button>
+              <div class="arch-connector" aria-hidden="true"><span class="arch-packet"></span></div>
+              <button class="arch-node" type="button"
+                data-arch-info="Built fault-tolerant, self-service Ray infrastructure that cut model deployment from weeks to an hour.">
+                <span class="arch-node-step">03</span>
+                <span class="arch-node-name">Distributed Ray Infra</span>
+                <span class="arch-node-sub">Weeks → 1 Hr Deploy</span>
+              </button>
+              <div class="arch-connector" aria-hidden="true"><span class="arch-packet"></span></div>
+              <button class="arch-node" type="button"
+                data-arch-info="Architected cross-cloud LLM serving across AWS and GCP Vertex AI for optimal performance per dollar.">
+                <span class="arch-node-step">04</span>
+                <span class="arch-node-name">Multi-Cloud Serving</span>
+                <span class="arch-node-sub">AWS &amp; GCP Vertex AI</span>
+              </button>
+            </div>
           </div>
-          <p>
-  
+
+          <div class="pillars-grid">
+            <div class="pillar-item">
+              <h3>Low-Latency LLM Serving</h3>
+              <p>Optimize LLM inference across AWS and GCP Vertex AI for high throughput, low latency, and cost efficiency at scale.</p>
+            </div>
+            <div class="pillar-item">
+              <h3>Distributed Ray Infrastructure</h3>
+              <p>Built fault-tolerant, self-service Ray clusters for distributed serving and fine-tuning, cutting model deployment from weeks to an hour.</p>
+            </div>
+            <div class="pillar-item">
+              <h3>Agentic Orchestration</h3>
+              <p>Designed and deployed core Agentforce orchestration services for stateful agent execution and tool calls, processing 11M+ daily invocations.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- CHAPTER 02: MICROSOFT SWE II -->
+        <article class="chapter-card" id="microsoft"
+          data-index="02"
+          data-era="2023-2026 · MICROSOFT"
+          data-color="#a6a6c9"
+          data-accent="#c1abc9">
+          <div class="chapter-glow" aria-hidden="true"></div>
+          <header class="chapter-header">
+            <p class="chapter-kicker"><time datetime="2023">2023</time>-<time datetime="2026">2026</time></p>
+            <h2>Microsoft</h2>
+            <p class="chapter-role">Software Engineer II · Microsoft Teams &amp; Viva Engage</p>
+          </header>
+
+          <p class="chapter-lead">
+            Scaled enterprise broadcast and Q&amp;A products used by millions across Microsoft Teams and Viva Engage.
           </p>
-  
-        </section>
 
-        <section class="page-content__section" data-bg-color="#7FBA00">
-          <h2>2022 - Microsoft SWE Internship </h2>
+          <div class="chapter-split">
+            <div class="impact-grid">
+              <div class="impact-tile">
+                <span class="impact-metric">5× MAU</span>
+                <h3>Teams Q&amp;A at Scale</h3>
+                <p>Built full-stack features for <a class="inline-link" href="https://support.microsoft.com/en-us/office/q-a-in-microsoft-teams-meetings-f3c84c72-57c3-4b6d-aea5-67b11face787" target="_blank" rel="noopener">Microsoft Teams Q&amp;A ↗</a>, helping drive 5× growth in monthly active users.</p>
+              </div>
+              <div class="impact-tile">
+                <span class="impact-metric">100K Concurrent Joins</span>
+                <h3>Live Events &amp; Town Hall</h3>
+                <p>Scaled <a class="inline-link" href="https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview" target="_blank" rel="noopener">Teams Live Events in Viva Engage ↗</a> and <a class="inline-link" href="https://learn.microsoft.com/en-us/sharepoint/hold-town-hall-using-viva-engage" target="_blank" rel="noopener">Teams Town Hall ↗</a> to handle 100K concurrent joins.</p>
+              </div>
+              <div class="impact-tile">
+                <span class="impact-metric">GCC &amp; GCC-High</span>
+                <h3>Sovereign Cloud</h3>
+                <p>Launched Teams Q&amp;A into US Government clouds (GCC and GCC-High) for regulated enterprise customers.</p>
+              </div>
+              <div class="impact-tile">
+                <span class="impact-metric">Agent Runtime</span>
+                <h3>Agent Orchestration</h3>
+                <p>Built the core agent orchestration runtime powering Viva Engage enterprise workflows.</p>
+              </div>
+            </div>
 
-          <p>I returned to Microsoft as a software engineering intern on Yammer’s Compliance and Search team.</p>
-          <div class="imageContainer">
-            <img class="image" src="src/images/Me/Microsoft3.jpg">
+            <!-- Interactive Photo Switcher -->
+            <div class="media-switcher" data-gallery="microsoft">
+              <div class="media-frame">
+                <button class="photo-trigger" type="button"
+                  data-src="src/images/Me/msftTeam.webp"
+                  data-caption="My Microsoft Viva Engage &amp; Teams Q&amp;A engineering team">
+                  <img src="src/images/Me/msftTeam.webp" alt="With my Microsoft engineering team" loading="lazy" decoding="async">
+                  <span class="photo-zoom-hint">Expand ⤢</span>
+                </button>
+              </div>
+              <div class="media-switcher-bar">
+                <span class="media-caption">With my Microsoft team</span>
+                <div class="media-tabs" role="tablist" aria-label="Microsoft photos">
+                  <button class="media-tab is-active" type="button" role="tab" aria-selected="true"
+                    data-photo-src="src/images/Me/msftTeam.webp"
+                    data-photo-alt="With my Microsoft engineering team"
+                    data-photo-caption="With my Microsoft team">Team</button>
+                  <button class="media-tab" type="button" role="tab" aria-selected="false"
+                    data-photo-src="src/images/Me/microsoft4.JPG"
+                    data-photo-alt="At Studio B on the Microsoft campus"
+                    data-photo-caption="Studio B, Microsoft Campus">Studio B</button>
+                </div>
+              </div>
+            </div>
           </div>
+        </article>
 
-            <p>
-              I delivered a group data-export feature centered on GDPR compliance and pipeline reliability. The project
-              required close coordination across engineering and product teams and shipped ahead of schedule.
-            </p>
+        <!-- CHAPTER 03: AMAZON -->
+        <article class="chapter-card" id="amazon"
+          data-index="03"
+          data-era="2022 · AMAZON ALEXA AI"
+          data-ticker="AMAZON · ALEXA AI NLU // -80% TRAINSET GENERATION // 1 DAY -> ~30 MIN REGRESSION TRIAGE // DISTRIBUTED CACHE"
+          data-color="#d1b18c"
+          data-accent="#ca9da7">
+          <div class="chapter-glow" aria-hidden="true"></div>
+          <header class="chapter-header">
+            <p class="chapter-kicker"><time datetime="2022">2022</time></p>
+            <h2>Amazon</h2>
+            <p class="chapter-role">Software Development Engineer Intern · Alexa AI (NLU)</p>
+          </header>
 
-        </section>
+          <p class="chapter-lead">
+            Sped up Alexa AI's training and testing pipelines so data scientists could ship model updates in minutes instead of days.
+          </p>
 
-      <section class="page-content__section" data-bg-color="#4b2e83">
-        <h2><a id="undecoratedColorlessLink" target="_blank" href="https://www.startup-uw.com/">2022 - StartupUW</a></h2>
+          <div class="chapter-split">
+            <div class="telemetry-bars">
+              <div class="telemetry-card">
+                <div class="telemetry-head">
+                  <strong>Training-Set Caching System</strong>
+                  <span class="telemetry-delta">-80% Build Time</span>
+                </div>
+                <p>Built a caching layer that cut dataset generation time by 80%.</p>
+                <div class="meter-group" aria-label="Build time reduced by 80 percent">
+                  <div class="meter-row">
+                    <span>Before</span>
+                    <div class="meter-track"><div class="meter-fill is-baseline" style="--target-width: 100%"></div></div>
+                    <span class="meter-val">100%</span>
+                  </div>
+                  <div class="meter-row">
+                    <span>After</span>
+                    <div class="meter-track"><div class="meter-fill is-optimized" style="--target-width: 20%"></div></div>
+                    <span class="meter-val">20%</span>
+                  </div>
+                </div>
+              </div>
 
-        <p>
-          I joined StartupUW to help turn the university’s entrepreneurial talent into a stronger founder community.
-          On an eight-person leadership team, I helped restructure the organization and initially led Startup-a-thon.
-        </p>
+              <div class="telemetry-card">
+                <div class="telemetry-head">
+                  <strong>Parallelized ML Regression Pipeline</strong>
+                  <span class="telemetry-delta">1 Day → ~30 Min</span>
+                </div>
+                <p>Parallelized ML regression testing, shrinking model triage from a full day to 30 minutes.</p>
+                <div class="meter-group" aria-label="Triage time reduced from 1 day to about 30 minutes">
+                  <div class="meter-row">
+                    <span>Before</span>
+                    <div class="meter-track"><div class="meter-fill is-baseline" style="--target-width: 96%"></div></div>
+                    <span class="meter-val">1 Day</span>
+                  </div>
+                  <div class="meter-row">
+                    <span>After</span>
+                    <div class="meter-track"><div class="meter-fill is-optimized" style="--target-width: 8%"></div></div>
+                    <span class="meter-val">~30 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <div class="imageContainer">
-          <img class="image" src="src/images/Me/startupathon4.jpg">
+            <div class="media-switcher">
+              <div class="media-frame">
+                <button class="photo-trigger" type="button"
+                  data-src="src/images/Me/spheres.webp"
+                  data-caption="Inside the Amazon Spheres in Seattle during my Alexa AI internship">
+                  <img src="src/images/Me/spheres.webp" alt="Inside the Amazon Spheres in Seattle" loading="lazy" decoding="async">
+                  <span class="photo-zoom-hint">Expand ⤢</span>
+                </button>
+              </div>
+              <div class="media-switcher-bar">
+                <span class="media-caption">Amazon Spheres, Seattle</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CHAPTER 04: MICROSOFT SWE INTERN -->
+        <article class="chapter-card" id="microsoft-intern"
+          data-index="04"
+          data-era="2022 · MICROSOFT YAMMER"
+          data-ticker="MICROSOFT · SWE INTERN // YAMMER COMPLIANCE & SEARCH // GDPR GROUP DATA EXPORT // SHIPPED EARLY"
+          data-color="#7fbba7"
+          data-accent="#a1d3c8">
+          <div class="chapter-glow" aria-hidden="true"></div>
+          <header class="chapter-header">
+            <p class="chapter-kicker"><time datetime="2022">2022</time></p>
+            <h2>Microsoft</h2>
+            <p class="chapter-role">Software Engineering Intern · Yammer Compliance &amp; Search</p>
+          </header>
+
+          <div class="chapter-split">
+            <div class="chapter-narrative">
+              <p class="chapter-lead">
+                Built the group data export feature that helps enterprises meet GDPR requirements, and shipped it ahead of schedule.
+              </p>
+              <p class="chapter-body">
+                As a returning intern on Yammer's Compliance and Search team, I delivered the feature with a focus on <strong>GDPR compliance</strong> and reliable pipeline execution, working closely with engineering and product teammates along the way.
+              </p>
+            </div>
+
+            <div class="media-switcher">
+              <div class="media-frame">
+                <button class="photo-trigger" type="button"
+                  data-src="src/images/Me/Microsoft3.jpg"
+                  data-caption="Microsoft Redmond campus during my 2022 Yammer Compliance &amp; Search internship">
+                  <img src="src/images/Me/Microsoft3.jpg" alt="At Microsoft during my 2022 internship" loading="lazy" decoding="async">
+                  <span class="photo-zoom-hint">Expand ⤢</span>
+                </button>
+              </div>
+              <div class="media-switcher-bar">
+                <span class="media-caption">Redmond Campus · 2022</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CHAPTER 05: STARTUPUW -->
+        <article class="chapter-card" id="startupuw"
+          data-index="05"
+          data-era="2022 · STARTUPUW"
+          data-ticker="STARTUPUW · CO-PRESIDENT & EVP // 100+ STARTUP-A-THON FOUNDERS // 2X TEAM GROWTH // UNIVERSITY OF WASHINGTON"
+          data-color="#b3a0c6"
+          data-accent="#d3c29a">
+          <div class="chapter-glow" aria-hidden="true"></div>
+          <header class="chapter-header">
+            <p class="chapter-kicker"><time datetime="2022">2022</time></p>
+            <h2>StartupUW</h2>
+            <p class="chapter-role">Co-President &amp; Executive Vice President</p>
+          </header>
+
+          <div class="chapter-split">
+            <div class="chapter-narrative">
+              <p class="chapter-lead">
+                I joined StartupUW, the biggest entrepreneurship club at UW, to help turn campus talent into a connected founder community.
+              </p>
+              <p class="chapter-body">
+                On an eight-person leadership team, I helped restructure the club into focused initiatives and initially led Startup-a-thon, an early-stage venture competition for <strong>100+ participants</strong> bringing together founders, VCs, speakers, and hands-on workshops. Its success helped us <strong>double (2×)</strong> the team as I moved into Executive VP and then Co-President, building a community of student entrepreneurs across campus.
+              </p>
+              <div class="mini-metrics">
+                <div class="mini-metric">
+                  <strong>100+</strong>
+                  <span>Startup-a-thon Builders</span>
+                </div>
+                <div class="mini-metric">
+                  <strong>2×</strong>
+                  <span>Leadership Team Expansion</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dual-gallery">
+              <button class="photo-trigger dual-photo-main" type="button"
+                data-src="src/images/Me/startupathon4.jpg"
+                data-caption="Leading Startup-a-thon workshops and venture pitches at UW">
+                <img src="src/images/Me/startupathon4.jpg" alt="Startup-a-thon competition at University of Washington" loading="lazy" decoding="async">
+                <span class="photo-zoom-hint">⤢</span>
+              </button>
+              <button class="photo-trigger dual-photo-sub" type="button"
+                data-src="src/images/Me/startupathon5.JPG"
+                data-caption="StartupUW Startup-a-thon finale and founder community">
+                <img src="src/images/Me/startupathon5.JPG" alt="StartupUW Startup-a-thon finale with participants" loading="lazy" decoding="async">
+                <span class="photo-zoom-hint">⤢</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- CHAPTER 06: ID TECH -->
+        <article class="chapter-card" id="id-tech"
+          data-index="06"
+          data-era="2021 · iD TECH VR"
+          data-ticker="iD TECH · GAME DEV & VR INSTRUCTOR // LAUNCHED VR CURRICULUM // TECHNICAL MENTORSHIP"
+          data-color="#c898a3"
+          data-accent="#bbc995">
+          <div class="chapter-glow" aria-hidden="true"></div>
+          <header class="chapter-header">
+            <p class="chapter-kicker"><time datetime="2021">2021</time></p>
+            <h2>iD Tech</h2>
+            <p class="chapter-role">Game Development &amp; VR Instructor</p>
+          </header>
+
+          <p class="chapter-lead">
+            Taught game development and helped launch iD Tech's first Virtual Reality curriculum.
+          </p>
+          <p class="chapter-body">
+            Coached students through real-time 3D mechanics, physics, and interactive loops.
+          </p>
+        </article>
+
+        <!-- CHAPTER 07: MICROSOFT EXPLORE -->
+        <article class="chapter-card" id="microsoft-explore"
+          data-index="07"
+          data-era="2020 · MICROSOFT EXPLORE"
+          data-ticker="MICROSOFT · EXPLORE INTERN // UNITY & WEBGL SECURITY GAME // FIRST INDUSTRY ENGINEERING ROLE"
+          data-color="#c7aa8b"
+          data-accent="#d2c49c">
+          <div class="chapter-glow" aria-hidden="true"></div>
+          <header class="chapter-header">
+            <p class="chapter-kicker"><time datetime="2020">2020</time></p>
+            <h2>Microsoft Explore</h2>
+            <p class="chapter-role">Explore Intern · Security Gamification (Unity &amp; WebGL)</p>
+          </header>
+
+          <div class="chapter-split">
+            <div class="chapter-narrative">
+              <p class="chapter-lead">
+                First industry engineering role, blending software engineering, design, and game development.
+              </p>
+              <p class="chapter-body">
+                Built a <strong>Unity and WebGL</strong> security game turning hundreds of training concepts into playable levels and leaderboards.
+              </p>
+            </div>
+
+            <div class="media-switcher">
+              <div class="media-frame">
+                <button class="photo-trigger" type="button"
+                  data-src="src/images/Me/microsoft2.jpg"
+                  data-caption="With my Microsoft Explore intern team building a Unity &amp; WebGL security game (2020)">
+                  <img src="src/images/Me/microsoft2.jpg" alt="With my team during the 2020 Microsoft Explore internship" loading="lazy" decoding="async">
+                  <span class="photo-zoom-hint">Expand ⤢</span>
+                </button>
+              </div>
+              <div class="media-switcher-bar">
+                <span class="media-caption">Microsoft Explore · 2020</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECRET PORTAL FINALE -->
+    <section class="shell portal-section" id="portal-cta" aria-labelledby="portal-title">
+      <div class="portal-card">
+        <div class="portal-orbit" aria-hidden="true"></div>
+        <div class="portal-content">
+          <h2 id="portal-title">Built at work.<br>Made out of <em>curiosity.</em></h2>
+          <p class="portal-copy">
+            Check out my AI products, games, and side projects in the <strong>Project Studio</strong>, or see what I'm up to outside of work.
+          </p>
+          <div class="portal-actions">
+            <a class="portal-btn is-primary" href="projects.html">
+              <span>Enter Project Studio</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a class="portal-btn is-secondary" href="lyfe.html">
+              <span>Explore #LYFE</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
+  </main>
 
-        <p>
-          Startup-a-thon became an early-stage venture competition with more than 100 participants, bringing together
-          founders, investors, speakers, and hands-on workshops.
-        </p>
+  <footer class="site-footer" data-tone="dark">
+    <div class="site-footer-invitation"><a class="site-footer-title" href="mailto:rus.bekniyazov@gmail.com">Let’s build <em>something.</em><span aria-hidden="true">↗</span></a><a class="site-footer-email" href="mailto:rus.bekniyazov@gmail.com">rus.bekniyazov@gmail.com</a></div>
+    <div class="site-footer-bottom"><a class="site-footer-owner" href="index.html">Ruslan Bekniyazov<span>© <span data-year>2026</span></span></a><nav class="site-footer-socials" aria-label="Social links"><a href="https://www.instagram.com/shkeeper_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="site-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r=".8" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a><a href="https://www.linkedin.com/in/ruslan-bekniyazov/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="site-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.4 7.9H1.8V22h3.6V7.9ZM3.6 2a2.1 2.1 0 1 0 0 4.2 2.1 2.1 0 0 0 0-4.2ZM22 13.9c0-4.2-2.2-6.2-5.1-6.2a4.4 4.4 0 0 0-4 2.2v-2H9.3V22h3.6v-7.7c0-2 .4-3.8 2.9-3.8s2.6 2.2 2.6 4V22H22v-8.1Z"/></svg><span>LinkedIn</span></a><a href="https://github.com/ruslanbekniyazov" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="site-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span>GitHub</span></a></nav><a class="site-footer-top" href="#top">BACK TO TOP ↑</a></div>
+  </footer>
 
-        <div class="imageContainer">
-          <img class="image" src="src/images/Me/startupathon5.JPG">
-        </div>
+  <!-- Kinetic Bottom Telemetry Ticker -->
+  <div class="telemetry-ticker" aria-hidden="true">
+    <div class="ticker-track" id="ticker-track">
+      <span>LLM Inference Optimization · Distributed Systems · Ray · Agentic Orchestration · vLLM · CUDA · GCP Vertex AI · AWS SageMaker &amp; HyperPod · Kubernetes · Python · C++ · Go · TypeScript</span>
+      <span>·</span>
+      <span>LLM Inference Optimization · Distributed Systems · Ray · Agentic Orchestration · vLLM · CUDA · GCP Vertex AI · AWS SageMaker &amp; HyperPod · Kubernetes · Python · C++ · Go · TypeScript</span>
+    </div>
+  </div>
 
-        <p>
-          I later became Executive VP and then Co-President. We doubled the team and grew StartupUW into a more
-          connected, durable community for student founders across campus.
-        </p>
-      </section>
-
-      <section class="page-content__section" data-bg-color="green">
-        <h2>2021 - iD Tech</h2>
-
-        <p>
-          I taught game development to young computer scientists and was selected among the first instructors to
-          launch iD Tech’s VR development curriculum. Teaching made me much better at decomposing technical ideas and
-          adapting them to the person in front of me.
-        </p>
-
-        <blockquote><p id="quoteLarge">To teach is to learn twice over.
-        </p><div class="alignRight"><cite>-Joseph Joubert</cite></div></blockquote>
-
-      </section>
-
-      <section class="page-content__section" data-bg-color="#F25022">
-        <h2>2020 - Microsoft Explore </h2>
-
-        <p>Microsoft Explore was my first industry engineering role and my introduction to building software on a cross-functional team.</p>
-        <div class="imageContainer">
-          <img class="image" src="src/images/Me/microsoft2.jpg">
-        </div>
-        <p>
-          Our team built a Unity and WebGL game that turned hundreds of security-training concepts into an engaging
-          experience with levels, narrative, and leaderboards. It taught me to balance technical constraints with the
-          clarity and momentum a user-facing product needs.
-        </p>
-
-      </section>
-
-
-      <section class="page-content__section" data-bg-color="black">
-        <h2>Shhh...🤫 Wanna see something cool?</h2>
-
-        <p> If you want to see what I have been working on, follow me
-          to the <a id="undecoratedLink" target="_blank" href="projects.html">
-            Project Studio,</a> the ever-growing sanctuary of my precious artifacts. </p>
-
-        <p></p>
-      </section>
-    </main>
-
-    <script type="text/javascript" src="src/js/jquery.min.js"></script>
-    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
-
-    <script type="text/javascript" >
-      function showImages(el) {
-        var windowHeight = jQuery( window ).height();
-        $(el).each(function(){
-            var thisPos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            if (topOfWindow + windowHeight - 200 > thisPos ) {
-                $(this).fadeTo(1500, 1);
-            }
-        });
-      }
-      $(document).ready(function(){
-              showImages('.image');
-      });
-      $(window).scroll(function() {
-              showImages('.image');
-      });
-      gsap.registerPlugin(ScrollTrigger);
-
-      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion)");
-      const sections = document.querySelectorAll(".page-content__section");
-      const marquees = document.querySelectorAll(".marquee div");
-      let marqueeText = "";
-
-      const updateMarqueeText = () => {
-        [...marquees].forEach((marquee) => {
-          marquee.classList.add("active");
-          marquee.addEventListener("transitionend", () => {
-            marquee.classList.remove("active");
-            marquee.innerText = `${marqueeText} 😎 `.repeat(20);
-          });
-        });
-      };
-
-      const updateBgColor = (color) =>
-        document.documentElement.style.setProperty("--color-background", color);
-
-      const setActiveSection = (section) => {
-        marqueeText = section.querySelector("h2").textContent;
-        [...sections].forEach((section) => section.classList.remove("active"));
-        section.classList.add("active");
-        !prefersReducedMotion.matches && updateBgColor(section.dataset.bgColor);
-        updateMarqueeText();
-      };
-
-      if (!prefersReducedMotion.matches) {
-        gsap.to(".marquee div", {
-          scrollTrigger: {
-            trigger: ".page-content",
-            scrub: 0.25,
-            start: "top bottom",
-            end: "bottom top",
-            ease: "power2"
-          },
-          xPercent: -50
-        });
-      }
-
-      gsap.utils.toArray(".page-content__section h2").forEach((heading) => {
-        ScrollTrigger.create({
-          trigger: heading,
-          start: "top center",
-          end: "bottom 200px",
-          toggleActions: "play reset play reset",
-          ease: "power2",
-          onEnter: () =>
-            marqueeText !== heading.textContent &&
-            setActiveSection(heading.parentElement),
-          onEnterBack: () =>
-            marqueeText !== heading.textContent &&
-            setActiveSection(heading.parentElement)
-        });
-      });
-
-    </script>
+  <!-- Photo Lightbox Modal -->
+  <div class="lightbox" id="photo-lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" hidden>
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <figure class="lightbox-figure">
+      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close expanded photo">✕</button>
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
 </body>
-
 </html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <title>Ruslan Bekniyazov</title>
+  <rect width="72" height="72" rx="16" fill="#090c10"/>
+  <g fill="#eef0ed">
+    <path d="M10 27h6v4c1.9-3.2 4.7-4.7 8.5-4.3v6.2c-5.5-.6-8.3 2.1-8.3 7.7V54H10Z"/>
+    <path fill-rule="evenodd" d="M28 14h6.3v17c2-3 4.8-4.5 8.4-4.5C50 26.5 55 32 55 40.6S50 55 42.7 55c-3.7 0-6.6-1.6-8.6-4.5V54H28Zm6.1 26.6c0 5.5 2.7 8.8 7.1 8.8s7.2-3.3 7.2-8.8-2.8-8.5-7.2-8.5-7.1 3-7.1 8.5Z"/>
+  </g>
+  <circle cx="61" cy="51" r="3.5" fill="#a1d3c8"/>
+</svg>

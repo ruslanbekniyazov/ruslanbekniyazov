@@ -1,256 +1,312 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The interests, education, and life beyond work of Ruslan Bekniyazov." />
-    <meta name="keywords" content="Ruslan Bekniyazov, Seattle, University of Washington, Georgia Tech, travel, music, game development" />
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta property="og:title" content="Beyond Work — Ruslan Bekniyazov">
-    <meta property="og:type" content="profile">
-    <meta property="og:description" content="Interests, education, and life beyond engineering.">
-    <meta property="og:image" content="src/images/Activities/el salvador.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="797">
-    <meta property="og:url" content="https://www.ruslanbekniyazov.com/lyfe.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Beyond Work — Ruslan Bekniyazov">
-    <meta name="twitter:description" content="Interests, education, and life beyond engineering.">
-    <meta name="twitter:image" content="src/images/Activities/el salvador.jpg">
+  <title>#LYFE | Ruslan Bekniyazov</title>
+  <link rel="icon" type="image/svg+xml" href="src/images/favicon.svg">
+  <meta name="description" content="Beyond work: sports, music, travel, education, and curiosity by Ruslan Bekniyazov.">
+  <meta name="theme-color" content="#fbfaf7">
 
-    <link rel="stylesheet" type="text/css" href="src/css/Lyfe.css">
-    <link rel="stylesheet" type="text/css" href="src/css/index.css">
-    <link rel="icon" href="src/images/Me/rb4.png">
-    <title>Beyond Work — Ruslan Bekniyazov</title>
-    <script type="text/javascript" src="src/js/jquery.min.js"></script>
-  </head>
-  <body>
-    <!-- The navbar -->
-    <div id="navbar">
-      <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
-      <label for="menu-icon"></label>
-      <nav class="nav">
-        <ul class="pt-5">
-          <li class="menuListItem"><a href="index.html">Home</a></li>
-          <li class="menuListItem"><a href="xp.html">XP</a></li>
-          <li class="menuListItem"><a target="_blank" href="https://www.canva.com/design/DAE35KuJEpw/0s_zuq88y1Cmf-UZ-S3BhA/view?utm_content=DAE35KuJEpw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Resume</a></li>
-          <li class="menuListItem"><a href="projects.html">PROJECTS</a></li>
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="#LYFE | Ruslan Bekniyazov">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ruslanbekniyazov.com/lyfe.html">
+  <meta property="og:description" content="Born in Ashgabat, living in Seattle. Beyond work: sports, music, travel, education, and history.">
+  <meta property="og:image" content="src/images/Activities/el salvador.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="797">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="#LYFE | Ruslan Bekniyazov">
+  <meta name="twitter:description" content="Beyond work by Ruslan Bekniyazov.">
+  <meta name="twitter:image" content="src/images/Activities/el salvador.jpg">
 
-          <div class="footer-social-icons">
-            <a href="https://www.linkedin.com/in/ruslan-bekniyazov/" target="_blank" class="social-icon">
-              <i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/ruslanbekniyazov" target="_blank" class="social-icon">
-              <i class="fa fa-github"></i></a>
-            <a href="https://www.instagram.com/shkeeper_/" target="_blank" class="social-icon">
-              <i class="fa fa-instagram"></i></a>
-            <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=rus.bekniyazov@gmail.com" target="_blank" class="social-icon"> <i class="fa fa-envelope"></i></a>
+  <!-- Fonts (Font Awesome 4.6.3 icons are loaded via index.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/css/index.css">
+  <link rel="stylesheet" href="src/css/Lyfe.css">
+  <link rel="stylesheet" href="src/css/page-design.css?v=2">
+  <link rel="stylesheet" href="src/css/site-nav.css">
+  <script defer src="src/js/site.js"></script>
+</head>
+
+<body class="page-lyfe" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Subtle Top Reading Progress Line -->
+  <div id="scroll-beam" aria-hidden="true"></div>
+
+  <header class="site-header" data-tone="light">
+    <a class="site-brand" href="index.html" aria-label="Ruslan Bekniyazov, home"><span class="brand-mark" aria-hidden="true">rb<span>.</span></span><span class="brand-caption">RUSLAN BEKNIYAZOV</span></a>
+    <nav class="site-links" aria-label="Main navigation"><a href="xp.html">Experience</a><a href="projects.html">Projects</a><a href="lyfe.html" aria-current="page">#LYFE</a></nav>
+    <div class="site-actions"><nav class="header-socials" aria-label="Social links"><a href="https://www.instagram.com/shkeeper_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="site-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r=".8" fill="currentColor" stroke="none"/></svg></a><a href="https://www.linkedin.com/in/ruslan-bekniyazov/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="site-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.4 7.9H1.8V22h3.6V7.9ZM3.6 2a2.1 2.1 0 1 0 0 4.2 2.1 2.1 0 0 0 0-4.2ZM22 13.9c0-4.2-2.2-6.2-5.1-6.2a4.4 4.4 0 0 0-4 2.2v-2H9.3V22h3.6v-7.7c0-2 .4-3.8 2.9-3.8s2.6 2.2 2.6 4V22H22v-8.1Z"/></svg></a><a href="https://github.com/ruslanbekniyazov" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="site-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></a></nav><a class="site-contact" href="mailto:rus.bekniyazov@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a></div>
+  </header>
+
+  <main class="shell" id="main">
+    <!-- Editorial Masthead -->
+    <header class="editorial-hero">
+      <p class="eyebrow">#LYFE</p>
+      <h1 class="hero-title">Beyond <em>work.</em></h1>
+      <p class="hero-intro">
+        I was born in Ashgabat and live in Seattle. A bit about what I do and care about.
+      </p>
+    </header>
+
+    <!-- 01: Sports & Music -->
+    <section class="chapter-row" aria-labelledby="ch-sports-music">
+      <div class="chapter-meta">
+        <span class="chapter-num">01</span>
+        <span class="chapter-kicker">Sports &amp; Music</span>
+        <h2 id="ch-sports-music" class="chapter-title">On the pitch, mountain, and keys</h2>
+      </div>
+      <div class="chapter-body">
+        <p class="prose">
+          Soccer has always been my favorite sport to play, both outdoor and futsal, and I've been an FC Barcelona supporter for as long as I can remember. During the week I spend time at the gym, play pickleball and ping-pong with friends, and snowboard in the winter. Love music and can spend hours curating it.
+        </p>
+
+        <div class="editorial-gallery gallery-three">
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Activities/snowboarding.JPG" alt="Snowboarding in the Cascade Mountains" style="--focal: center 35%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Activities/snowboarding.JPG" data-media-caption="" aria-label="Open snowboarding photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Activities/snowboarding-2.jpg" alt="Holding two snowboards on a snowy slope" style="--focal: center 46%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Activities/snowboarding-2.jpg" data-media-caption="" aria-label="Open snowboarding photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame print-frame-video">
+              <video class="studio-video" autoplay muted loop playsinline preload="metadata" aria-label="Piano playing clip">
+                <source src="src/images/Activities/piano.mp4" type="video/mp4">
+              </video>
+              <button type="button" class="expand-btn" data-media-type="video" data-media-src="src/images/Activities/piano.mp4" data-media-caption="" aria-label="Play piano video with sound in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02: Roots & Travel -->
+    <section class="chapter-row" aria-labelledby="ch-roots">
+      <div class="chapter-meta">
+        <span class="chapter-num">02</span>
+        <span class="chapter-kicker">Roots &amp; Travel</span>
+        <h2 id="ch-roots" class="chapter-title">From Ashgabat to Seattle</h2>
+      </div>
+      <div class="chapter-body">
+        <p class="prose">
+          I grew up in Ashgabat, Turkmenistan before moving to the US in 2014. With family spread across different parts of the world, travel has never felt optional to me, and I never stopped to enjoy it.
+        </p>
+
+        <div class="editorial-gallery gallery-four">
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Me/pisa.jpg" alt="Pisa, Italy" style="--focal: 42% 35%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Me/pisa.jpg" data-media-caption="Pisa" aria-label="Open Pisa photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>Pisa</figcaption>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Me/siena.jpg" alt="Piazza del Campo in Siena, Italy" style="--focal: center 50%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Me/siena.jpg" data-media-caption="Siena" aria-label="Open Siena photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>Siena</figcaption>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Me/verona.jpg" alt="Verona Arena at night, Italy" style="--focal: 50% 40%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Me/verona.jpg" data-media-caption="Verona" aria-label="Open Verona photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>Verona</figcaption>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Me/paris-heic.jpg" alt="Near the Eiffel Tower in Paris, France" style="--focal: center 32%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Me/paris-heic.jpg" data-media-caption="Paris" aria-label="Open Paris photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>Paris</figcaption>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Me/athens.jpg" alt="Academy of Athens, Greece" style="--focal: center 52%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Me/athens.jpg" data-media-caption="Athens" aria-label="Open Athens photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>Athens</figcaption>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Me/venice.jpg" alt="Grand Canal in Venice, Italy" style="--focal: 62% 35%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Me/venice.jpg" data-media-caption="Venice" aria-label="Open Venice photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>Venice</figcaption>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Me/london.jpg" alt="Bridge overlooking the Thames in London, UK" style="--focal: 36% 52%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Me/london.jpg" data-media-caption="London" aria-label="Open London photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>London</figcaption>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Me/budapest.jpg" alt="Hungarian Parliament on the Danube in Budapest" style="--focal: 62% 36%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Me/budapest.jpg" data-media-caption="Budapest" aria-label="Open Budapest photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>Budapest</figcaption>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Me/palermo.jpg" alt="Palermo, Italy" style="--focal: center 48%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Me/palermo.jpg" data-media-caption="Palermo" aria-label="Open Palermo photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>Palermo</figcaption>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Me/milan.jpg" alt="Duomo di Milano, Italy" style="--focal: 48% 55%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Me/milan.jpg" data-media-caption="Milan" aria-label="Open Milan photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>Milan</figcaption>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Me/madrid.jpg" alt="Madrid, Spain" style="--focal: center 40%;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Me/madrid.jpg" data-media-caption="Madrid" aria-label="Open Madrid photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>Madrid</figcaption>
+          </figure>
+
+          <figure class="photo-print">
+            <div class="print-frame">
+              <img src="src/images/Activities/el salvador.jpg" alt="El Salvador" style="--focal: center center;" loading="lazy">
+              <button type="button" class="expand-btn" data-media-type="image" data-media-src="src/images/Activities/el salvador.jpg" data-media-caption="El Salvador" aria-label="Open El Salvador photo in lightbox">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+              </button>
+            </div>
+            <figcaption>El Salvador</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03: Education (Photo-free typographic spread) -->
+    <section class="chapter-row" aria-labelledby="ch-edu">
+      <div class="chapter-meta">
+        <span class="chapter-num">03</span>
+        <span class="chapter-kicker">Education</span>
+        <h2 id="ch-edu" class="chapter-title">University of Washington &amp; Georgia Tech</h2>
+      </div>
+      <div class="chapter-body">
+        <div class="education-columns">
+          <div class="edu-col">
+            <p class="edu-term">2022 - 2024</p>
+            <h3 class="edu-school">University of Washington</h3>
+            <p class="edu-degree">B.S. in Computer Science, Paul G. Allen School</p>
+            <p class="edu-detail">
+              Earned my B.S. in Computer Science, completed the STARS program, served as a WSOS Lead mentoring incoming scholars, and earned Dean's List honors 8 times.
+            </p>
           </div>
-        </ul>
-      </nav>
+          <div class="edu-col">
+            <p class="edu-term">In Progress</p>
+            <h3 class="edu-school edu-school--single-line">Georgia Institute of Technology</h3>
+            <p class="edu-degree">M.S. in Computer Science, Machine Learning</p>
+            <p class="edu-detail">
+              Focusing on machine learning systems, GPU hardware and CUDA performance, reinforcement learning, and deep learning architectures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04: Curiosity (Photo-free essay block) -->
+    <section class="chapter-row chapter-row-last" aria-labelledby="ch-curiosity">
+      <div class="chapter-meta">
+        <span class="chapter-num">04</span>
+        <span class="chapter-kicker">Curiosity</span>
+        <h2 id="ch-curiosity" class="chapter-title">History, philosophy, and mythology</h2>
+      </div>
+      <div class="chapter-body">
+        <p class="prose">
+          Most of my reading goes toward older worlds and philosophy. I spend time with Ancient Greece and Rome, Viking history, Greek and Norse mythology, and classic dialogues from Plato and Socrates.
+        </p>
+      </div>
+    </section>
+
+    <nav class="journal-continue" aria-label="Keep exploring"><a href="xp.html">← The experience</a><a href="projects.html">Into the project studio ↗</a></nav>
+  </main>
+
+  <footer class="site-footer" data-tone="light">
+    <div class="site-footer-invitation"><a class="site-footer-title" href="mailto:rus.bekniyazov@gmail.com">Let’s build <em>something.</em><span aria-hidden="true">↗</span></a><a class="site-footer-email" href="mailto:rus.bekniyazov@gmail.com">rus.bekniyazov@gmail.com</a></div>
+    <div class="site-footer-bottom"><a class="site-footer-owner" href="index.html">Ruslan Bekniyazov<span>© <span data-year>2026</span></span></a><nav class="site-footer-socials" aria-label="Social links"><a href="https://www.instagram.com/shkeeper_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="site-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r=".8" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a><a href="https://www.linkedin.com/in/ruslan-bekniyazov/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="site-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.4 7.9H1.8V22h3.6V7.9ZM3.6 2a2.1 2.1 0 1 0 0 4.2 2.1 2.1 0 0 0 0-4.2ZM22 13.9c0-4.2-2.2-6.2-5.1-6.2a4.4 4.4 0 0 0-4 2.2v-2H9.3V22h3.6v-7.7c0-2 .4-3.8 2.9-3.8s2.6 2.2 2.6 4V22H22v-8.1Z"/></svg><span>LinkedIn</span></a><a href="https://github.com/ruslanbekniyazov" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="site-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span>GitHub</span></a></nav><a class="site-footer-top" href="#top">BACK TO TOP ↑</a></div>
+  </footer>
+
+  <!-- Click-to-zoom Media Lightbox -->
+  <div id="media-lightbox" class="media-lightbox" hidden role="dialog" aria-modal="true" aria-labelledby="lightbox-caption">
+    <div id="lightbox-backdrop" class="lightbox-backdrop"></div>
+    <div class="lightbox-dialog">
+      <button id="lightbox-close" type="button" class="lightbox-close" aria-label="Close lightbox">
+        &times;
+      </button>
+      <div class="lightbox-stage">
+        <img id="lightbox-img" src="" alt="" hidden>
+        <video id="lightbox-video" controls playsinline hidden></video>
+      </div>
+      <p id="lightbox-caption" class="lightbox-caption"></p>
     </div>
+  </div>
 
-    <div class="marquee-container">
-      <div class="marquee marquee--top">
-        <div></div>
-      </div>
-      <div class="marquee marquee--right">
-        <div></div>
-      </div>
-      <div class="marquee marquee--bottom">
-        <div></div>
-      </div>
-      <div class="marquee marquee--left">
-        <div></div>
-      </div>
-    </div>
-
-    <main class="page-content">
-      <section class="page-content__section" data-bg-color="white">
-        <h2 id="title">Beyond Work</h2>        <div class="imageContainer">
-          <img class="image appear" src="src/images/Activities/el salvador.jpg">
-        </div>
-        <p>A little context beyond the code: the interests, places, and pursuits that shape how I think and build.
-        </p>
-
-        <!--<blockquote><p id="quote">Life is too short to worry about the extra 2 pixel spacing of
-          letters in this quote. Hm.. hold on let me fix it</p>
-        <div class="alignRight"><cite>-Me </cite></div></blockquote>-->
-
-      </section>
-
-      <section class="page-content__section" data-bg-color="white">
-        <h2>Active </h2>
-
-        <p>First & foremost, we kick this section off with <b>soccer</b> ⚽.
-          I've been a player and a superfan for the past ~10 years. I played in
-          Central Asia, all of high school and college, and casually to this day.
-          I used to referee games in the Seattle area. Recently, I tried myself in futsal
-          which became one of my go tos.
-        </p>
-        <div class="imageContainer">
-          <img class="image appear" src="src/images/Activities/barcelona.jpg">
-        </div>
-
-        <p> I am a huge fan of ping-pong, been working on perfecting my spins.
-          If you are up for a quick match, lmk! 🏓 </p>
-        <p> Recently, I got into <b>snowboarding</b> 🏂 and a bit of <b>golf</b>⛳:
-        </p>
-
-        <div class="imageContainer">
-          <img class="image appear" src="src/images/Activities/snowboarding.JPG">
-        </div>
-        <div class="imageContainer">
-          <img class="image appear" src="src/images/Activities/golf.jpg">
-        </div>
-
-      </section>
-
-      <section class="page-content__section" data-bg-color="white">
-        <h2>Personal</h2>
-
-        <p>I love music, and its variety. From hip-hop to R&B, classical and lo-fi, all
-          have found their ways to my playlists.
-        </p>
-        <div class="imageContainer">
-          <video autoplay loop muted class="appear" width="100%" src="src/images/Activities/piano.mp4" alt="Playing piano"></video>
-        </div>
-
-        <p><b>Travel</b> has not only been an interest, but also somewhat of a lifestyle 
-          ever since we decided to move to the US back in 2014. And currently, a big part
-          of my family is scattered across the globe, and many speak different languages. 
-        </p>
-        <div class="imageContainer">
-          <img class="image appear" src="src/images/Me/paris.jpg">
-        </div>
-      </section>
-
-      <section class="page-content__section" data-bg-color="white">
-        <h2>Academic</h2><p>
-          I graduated with a Bachelor's degree in Computer Science from University of Washington.
-          I also completed a 2-year <b>STARS</b> program, being a part of a diverse cohort of students
-          where I got to learn the importance of grit and the growth mindset.
-        </p>
-        <p>
-          <b>Mythology:</b> I'm fascinated by the timelessness of Greek and Norse Mythologies.
-          Pop culture sparked my Mythology interest. Courses and books made me
-          realize how much more depth there is than meets the eye.
-        </p>
-        <p>
-          <b>Philosophy and History:</b> I'm hooked to Plato's mind games, the genious of Socrates,
-          Vikings, Ancient Greece, and Ancient Rome. History isn't just books; it's my creative juice. ✨
-        </p>
-        <div class="imageContainer">
-          <img class="image appear" src="src/images/Activities/pantheon-in-rome.jpg">
-        </div>
-
-
-      </section>
-
-      <section class="page-content__section" data-bg-color="white">
-        <h2>Professional</h2>
-
-        <p>
-          Outside my day job, I keep building. Product experiments, games, and AI projects give me a place to test ideas
-          end to end—from the first prototype through the systems and details that make something usable.
-        </p>
-
-        <p>Languages I use most:
-          <b><br>Python, Java, C#, TypeScript, JavaScript, SQL, C++</b>
-        </p>
-
-        <p>Platforms and tools:
-          <b><br>Ray, AWS, GCP, Kubernetes, PyTorch, React, Unity</b>
-        </p>
-      </section>
-
-      <section class="page-content__section" data-bg-color="white">
-
-      </section>
-    </main>
-
-    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
-    <script type="text/javascript" >
-      function showImages(el) {
-        var windowHeight = jQuery( window ).height();
-        $(el).each(function(){
-          var thisPos = $(this).offset().top;
-          var topOfWindow = $(window).scrollTop();
-          if (topOfWindow + windowHeight - 200 > thisPos ) {
-            $(this).fadeTo(1000, 1);
-          }
-        });
-      }
-      $(document).ready(function(){
-        showImages('.appear');
-      });
-      $(window).scroll(function() {
-        showImages('.appear');
-      });
-
-
-
-      gsap.registerPlugin(ScrollTrigger);
-
-      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion)");
-      const sections = document.querySelectorAll(".page-content__section");
-      const marquees = document.querySelectorAll(".marquee div");
-      let marqueeText = "";
-
-      const updateMarqueeText = () => {
-        [...marquees].forEach((marquee) => {
-          marquee.classList.add("active");
-          marquee.addEventListener("transitionend", () => {
-            marquee.classList.remove("active");
-            marquee.innerText = `${marqueeText} 😎 `.repeat(20);
-          });
-        });
-      };
-
-      const updateBgColor = (color) =>
-        document.documentElement.style.setProperty("--color-background", color);
-
-      const setActiveSection = (section) => {
-        marqueeText = section.querySelector("h2").textContent;
-        [...sections].forEach((section) => section.classList.remove("active"));
-        section.classList.add("active");
-        !prefersReducedMotion.matches && updateBgColor(section.dataset.bgColor);
-        updateMarqueeText();
-      };
-
-      if (!prefersReducedMotion.matches) {
-        gsap.to(".marquee div", {
-          scrollTrigger: {
-            trigger: ".page-content",
-            scrub: 0.25,
-            start: "top bottom",
-            end: "bottom top",
-            ease: "power2"
-          },
-          xPercent: -50
-        });
-      }
-
-      gsap.utils.toArray(".page-content__section h2").forEach((heading) => {
-        ScrollTrigger.create({
-          trigger: heading,
-          start: "top center",
-          end: "bottom 200px",
-          toggleActions: "play reset play reset",
-          ease: "power2",
-          onEnter: () =>
-            marqueeText !== heading.textContent &&
-            setActiveSection(heading.parentElement),
-          onEnterBack: () =>
-            marqueeText !== heading.textContent &&
-            setActiveSection(heading.parentElement)
-        });
-      });
-
-    </script>
+  <script src="src/js/lyfe-scene.js"></script>
 </body>
 
 </html>
