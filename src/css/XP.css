@@ -686,8 +686,8 @@ main {
 }
 
 .arch-hint {
-  font-size: 0.78rem;
-  color: var(--text-secondary);
+  font-size: 0.875rem;
+  color: var(--text-primary);
 }
 
 .arch-pipeline {
@@ -730,11 +730,6 @@ main {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--text-primary);
-}
-
-.arch-node-sub {
-  font-size: 0.72rem;
-  color: var(--text-muted);
 }
 
 .arch-connector {
