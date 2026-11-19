@@ -115,7 +115,6 @@ html:has(.page-projects), html:has(.page-experience) { background: #090c10; }
 .page-experience .traj-main strong { font-family: var(--site-display); font-size: 1.05rem; font-weight: 400; }
 .page-experience .traj-main > span { font-size: .7rem; }
 .page-experience .traj-year { font-size: .6rem; }
-.page-experience .deck-footer { font-size: .55rem; color: var(--text-muted); }
 .page-experience .era-rail-inner { border: 0; border-radius: 0; background: transparent; box-shadow: none; }
 .page-experience .chapter-card {
   padding: clamp(2rem, 4vw, 3.25rem) 0;

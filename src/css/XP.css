@@ -264,8 +264,7 @@ main {
 }
 
 .deck-header,
-.trajectory-list,
-.deck-footer {
+.trajectory-list {
   pointer-events: auto;
 }
 
@@ -386,15 +385,6 @@ main {
 .trajectory-row.is-active .traj-arrow {
   transform: translateX(3px);
   color: var(--era-color);
-}
-
-.deck-footer {
-  padding-top: 0.35rem;
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.06em;
-  color: var(--text-muted);
-  text-align: right;
 }
 
 /* =========================================================
