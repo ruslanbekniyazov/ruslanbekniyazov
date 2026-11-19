@@ -387,7 +387,6 @@ main {
   font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1.08;
-  margin-top: 0.45rem;
 }
 
 .project-lead {
@@ -475,20 +474,12 @@ main {
   min-width: 0;
 }
 
-.project-meta-row {
+.project-title-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   gap: 0.5rem;
-}
-
-.project-kicker {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  color: var(--card-color);
 }
 
 .ext-link {
@@ -509,7 +500,6 @@ main {
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: -0.025em;
-  margin-top: 0.42rem;
 }
 
 .card-content p {
